@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <div class="container1">
+      <!--nav bar-->
+      <div class="topnav">
+        <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./types-of-clouds.html">Types of clouds</a>
+        <li><a href="./galery.html">Galery</a></li>
+        <li><a class="active" href="#contact">Contact</a></li>
+        <li><div class="search-container">
+          <input type="text" id="searchBar" placeholder="Search..">
+        </div></li>
+      </ul>
+      <div class="menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+        <div class="line4"></div>
+      </div>
+    </div>
+   
+      <h2 style="color:#0b349d;">Say hello</h2>
+      <div class="container">
+        <form action="#">
+
+          <div class="row">
+            <div class="col-25">
+              <label style=" color:#0b349d;" for="fname">First Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="firstname" placeholder="Your name.." pattern="[a-zA-Z]+[ ]*" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label style=" color:#0b349d;" for="lname">Last Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="lname" name="lastname" placeholder="Your last name.." pattern="[a-zA-Z]+[ ]*" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label style=" color:#0b349d;" for="email">Email</label>
+            </div>
+            <div class="col-75">
+              <input type="email" id="email" name="email" placeholder="Your email.." pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required>
+            </div>
+          </div>
+
+
+
+          <div class="row">
+            <div class="col-25">
+              <label style=" color:#0b349d;" for="phone">Enter your phone number:</label>
+            </div>
+            <div class="col-75">
+              <input type="tel" id="phone" name="phone" placeholder="Your phone number..." pattern="[0-9]{6}"> 
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label style=" color:#0b349d;" for="cnp">Cnp</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="cnp" name="cnp" placeholder="Your cnp.." pattern="^[1-9]\d{2}(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01])(0[1-9]|[1-4]\d|5[0-2]|99)(00[1-9]|0[1-9]\d|[1-9]\d\d)\d$" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label style=" color:#0b349d;" for="country">Country</label>
+            </div>
+            <div class="col-75">
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label style=" color:#0b349d;" for="subject">Subject</label>
+            </div>
+            <div class="col-75">
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+    
+      <center>
+        <button onclick="enableLightMode()">Light</button>
+  
+        <button onclick="enableDarkMode()">Dark</button>
+        </center>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script src="scripts.js"></script>
+  </body>
+</html>
