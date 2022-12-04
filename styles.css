@@ -41,7 +41,7 @@ body {
 .nav-links {
   display: flex;
   justify-content: space-around;
-  width: 50%;
+  width: 60%;
 }
 .nav-links li {
   list-style: none;
@@ -312,16 +312,16 @@ video {
     }
 
 .help {
-    width: 40px;
+    width: 80px;
     margin: 0 auto;
   }
   
 .help .question {
-height: 40px;
-width: 40px;
+height: 80px;
+width: 80px;
 background: #ccc;
 font-size: 32px;
-line-height: 40px;
+line-height: 80px;
 text-align: center;
 border-radius: 50%;
 cursor: pointer;
