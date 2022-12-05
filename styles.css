@@ -119,7 +119,7 @@ cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40%;
+    width: 54%;
     transform: translate(100%);
     transition: transform 0.5s ease-in;
     box-shadow: rgb(0 0 0 / 4%) 5px 0px inset;
